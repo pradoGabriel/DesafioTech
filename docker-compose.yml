@@ -20,7 +20,7 @@ services:
       - sqlserver
     entrypoint: ["sh", "-c", "/wait-for-it.sh sqlserver:1433 --timeout=120 -- dotnet TechChallengeFuncionarios.Api.dll"]
   frontend:
-    build: ./Frontend/funcionarios-frontend
+    build: ./Frontend/funcionario-frontend
     ports:
       - "3000:80"
     depends_on:
