@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      SA_PASSWORD: "TechChallenge@2025"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserverdata:/var/opt/mssql
+  backend:
+    build: ./TechChallengeFuncionarios.Api
+    ports:
+      - "3050:8080"
+    environment:
+      - ConnectionStrings__Default=Server=sqlserver;Database=Funcionario;User Id=sa;Password=TechChallenge@2025;TrustServerCertificate=True;
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - sqlserver
+    entrypoint: ["sh", "-c", "/wait-for-it.sh sqlserver:1433 --timeout=120 -- dotnet TechChallengeFuncionarios.Api.dll"]
+  frontend:
+    build: ./Frontend/funcionarios-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+volumes:
+  sqlserverdata:

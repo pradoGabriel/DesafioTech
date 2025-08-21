@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallengeFuncionarios.Api", "TechChallengeFuncionarios.Api\TechChallengeFuncionarios.Api.csproj", "{30BEB4DE-BC01-436F-863F-FA28FB8C7D37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallengeFuncionarios.Tests", "TechChallengeFuncionarios.Tests\TechChallengeFuncionarios.Tests.csproj", "{4324616F-D69E-4034-B52D-8F1526E16F1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30BEB4DE-BC01-436F-863F-FA28FB8C7D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30BEB4DE-BC01-436F-863F-FA28FB8C7D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30BEB4DE-BC01-436F-863F-FA28FB8C7D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30BEB4DE-BC01-436F-863F-FA28FB8C7D37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4324616F-D69E-4034-B52D-8F1526E16F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4324616F-D69E-4034-B52D-8F1526E16F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4324616F-D69E-4034-B52D-8F1526E16F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4324616F-D69E-4034-B52D-8F1526E16F1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F50EDB6F-3FB1-4B21-B05A-0D49C34C903A}
+	EndGlobalSection
+EndGlobal
